@@ -1,0 +1,11 @@
+package hello.aop.member.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.TYPE) // class에 붙일 수 있는 annotation
+@Retention(RetentionPolicy.RUNTIME) // runtime까지 annotation이 살아남음
+public @interface ClassAop {
+}
